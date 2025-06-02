@@ -1,0 +1,30 @@
+# Baris FROM menunjuk ke lokasi absolut file GGUF model Anda.
+# Pastikan path ini benar-benar sesuai dengan lokasi dan nama file GGUF Anda.
+# Gunakan tanda kutip jika path mengandung spasi atau karakter khusus.
+FROM "D:\_Kegiatan\2025_05_19 RTL ToT KKA\(LK42 ToT GTK) Uji Coba\Integrasi Model Nusantara ke Ollama\Nusantara-0.8b-Indo-Chat-q8_0.gguf"
+
+# Baris TEMPLATE mendefinisikan bagaimana input akan diformat untuk model.
+# Template ini spesifik untuk model berbasis Qwen2.
+TEMPLATE """{{ if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{ end }}{{ if .Prompt }}<|im_start|>user
+{{ .Prompt }}<|im_end|>
+{{ end }}<|im_start|>assistant
+"""
+
+# Baris SYSTEM menetapkan pesan sistem default untuk model.
+# Ini membantu mengarahkan peran dan perilaku model.
+SYSTEM "Anda adalah asisten AI yang ramah dan membantu, yang bisa berkomunikasi dalam Bahasa Indonesia."
+
+# Baris PARAMETER mengatur berbagai parameter inferensi.
+# Anda bisa menyesuaikan nilai-nilai ini sesuai kebutuhan.
+PARAMETER temperature 0.7 
+# PARAMETER top_k 50
+# PARAMETER top_p 0.9
+# PARAMETER num_ctx 4096 # Sesuaikan dengan kemampuan model dan memori Anda
+
+# PARAMETER stop adalah token atau string yang akan menghentikan generasi teks.
+# Untuk Qwen2, <|im_end|> adalah token penting untuk mengakhiri giliran assistant.
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|endoftext|>"
