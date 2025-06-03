@@ -6,12 +6,14 @@ https://github.com/trigasboe/ai-nusantara-in-ollama/blob/main/(GEMINI)%20Integra
 
 # Hasil (stream-on)
 Bash: ollama run nusantara:0.8b-q8_0
+
 Python: chatbot_dasar_webserver-stream-on.py
 
 ![image](https://github.com/user-attachments/assets/e82d902a-3c6c-452e-82d7-324c263ec2fb)
 
 # Hasil (stream-on aplikasi desktop -- tkinter --)
 Bash: ollama run nusantara:0.8b-q8_0
+
 Python: chatbot_desktop_webserver-stream-on4.py
 
 ![image](https://github.com/user-attachments/assets/98014eb3-6469-4014-8d52-090a2215abb1)
