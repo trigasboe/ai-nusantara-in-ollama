@@ -5,15 +5,23 @@ Penjelasan lengkap dan detail ada pada file (GEMINI) Integrasi Nusantara ke Olla
 https://github.com/trigasboe/ai-nusantara-in-ollama/blob/main/(GEMINI)%20Integrasi%20Nusantara%20ke%20Ollama%20ver01.pdf
 
 # Hasil (stream-on)
-Bash: ollama run nusantara:0.8b-q8_0
+1. Running ollama yang sudah terinstal di windows.
+       ![image](https://github.com/user-attachments/assets/8c7a096f-5dde-41c1-a789-074feb44a65d)
+            
+2. (Bisa melalui CMD windows) Ketik perintah:
+           - Bash: ollama --version                   ➡ untuk melihat versi ollama
+           - Bash: ollama list                        ➡ untuk melihat daftar model yang terintegrasi di ollama
+           - Bash: ollama run nusantara:0.8b-q8_0     ➡ Menjalankan model nusantara:0.8b-q8_0
+           - Tuliskan sembarang kalimat perintah (prompt) untuk menguji model.
+             ![image](https://github.com/user-attachments/assets/f273f244-9ec5-4b22-a2d3-d8ee71c8d039)
 
-Python: chatbot_dasar_webserver-stream-on.py
+3. Jalankan kode Python: chatbot_dasar_webserver-stream-on.py (misal menggunakan IDE Thonny)
 
 ![image](https://github.com/user-attachments/assets/e82d902a-3c6c-452e-82d7-324c263ec2fb)
 
-# Hasil (stream-on aplikasi desktop -- tkinter --)
-Bash: ollama run nusantara:0.8b-q8_0
 
-Python: chatbot_desktop_webserver-stream-on4.py
+
+# Hasil (stream-on aplikasi desktop -- Library tkinter --)
+1. Jalankan kode Python: chatbot_desktop_webserver-stream-on4.py
 
 ![image](https://github.com/user-attachments/assets/98014eb3-6469-4014-8d52-090a2215abb1)
