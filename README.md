@@ -15,7 +15,7 @@ https://github.com/trigasboe/ai-nusantara-in-ollama/blob/main/(GEMINI)%20Integra
            - Tuliskan sembarang kalimat perintah (prompt) untuk menguji model.
              ![image](https://github.com/user-attachments/assets/f273f244-9ec5-4b22-a2d3-d8ee71c8d039)
 
-3. Jalankan kode Python: chatbot_dasar_webserver-stream-on.py (misal menggunakan IDE Thonny)
+4. Jalankan kode Python: chatbot_dasar_webserver-stream-on.py (misal menggunakan IDE Thonny)
 
 ![image](https://github.com/user-attachments/assets/e82d902a-3c6c-452e-82d7-324c263ec2fb)
 
